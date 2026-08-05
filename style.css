@@ -22,7 +22,8 @@ body{
     font-weight: 100;
     font-style: normal;
 
-    font-size: 25vh;
+    font-size: min(25vh, 14vw);
+    /* font-size: 25vh; */
     color: #73debc;
     text-shadow:0 0 10px #98ebd2,
                 0 0 20px #98ebd2,
@@ -31,10 +32,16 @@ body{
 
     
 
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.85);
     height: 25vh;
     width: 50vw;
     border-radius: 20px;
+
+    /* text-align: center; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .timer-container{
