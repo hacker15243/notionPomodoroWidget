@@ -10,7 +10,6 @@ let sessionNumber = 1;
 
 const timerDisplay = document.getElementById("timer");
 const modeDisplay = document.getElementById("mode");
-const sessionDisplay = document.getElementById("session");
 
 const startButton = document.getElementById("start");
 const pauseButton = document.getElementById("pause");
@@ -33,7 +32,6 @@ function updateDisplay() {
         modeDisplay.textContent = "session " + sessionNumber + ": Break";
     }
 
-    sessionDisplay.textContent = `Session ${sessionNumber}`;
 }
 
 
