@@ -105,3 +105,50 @@ pauseButton.addEventListener("click", pauseTimer);
 resetButton.addEventListener("click", resetTimer);
 
 updateDisplay();
+
+
+
+
+
+
+
+// javascript to make popup work
+
+
+const settingsButton = document.getElementById("settingsButton");
+const settingsPopup = document.getElementById("settingsPopup");
+
+const closeButton = document.getElementById("closeButton");
+const saveButton = document.getElementById("saveButton");
+
+const workInput = document.getElementById("workInput");
+const breakInput = document.getElementById("breakInput");
+
+
+settingsButton.addEventListener("click", function() {
+    settingsPopup.classList.add("show");
+});
+
+
+closeButton.addEventListener("click", function() {
+    settingsPopup.classList.remove("show");
+});
+
+
+saveButton.addEventListener("click", function() {
+
+    let newWorkTime = Number(workInput.value);
+    let newBreakTime = Number(breakInput.value);
+
+    workTime = newWorkTime * 60;
+    breakTime = newBreakTime * 60;
+
+    timeLeft = workTime;
+    isWorkTime = true;
+
+    sessionNumber = 1;
+
+    updateDisplay();
+
+    settingsPopup.classList.remove("show");
+});

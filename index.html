@@ -12,6 +12,7 @@
     <title>Anime Pomodoro</title>
 </head>
 <body>
+    <button id = "settingsButton"></button>
     <div class="timer-container">
         <h1 id="mode">Work</h1>
         
@@ -23,6 +24,34 @@
             <button id="reset">reset</button>
         </div>
     </div>
+
+
+<div id="settingsPopup" class="popup">
+
+    <div class="popup-content">
+        <button id="closeButton">×</button>
+        
+        <div class = "popupText">
+            <h2>settings</h2>
+            <label>
+                work time:
+                <input id="workInput" type="number" value="20">
+            </label>
+
+            <label>
+                break time:
+                <input id="breakInput" type="number" value="5">
+            </label>
+
+            <button id="saveButton">save</button>
+        </div>
+        
+
+    </div>
+
+</div>
+
+    
     <script src = "script.js"></script>
 </body>
 </html>
